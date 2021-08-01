@@ -1,0 +1,57 @@
+{%load static%}
+<nav class="navbar">
+    <div class="logo">
+        <div class="circle"></div>
+        <p>
+            Interconcept<br /> Microfinance bank
+        </p>
+    </div>
+
+    <!-- Desktop & Tablet Navigation -->
+    <ul class="desktopNav">
+        <li class="navLink">
+            <a href="" class="navLinkItem">
+                About
+            </a>
+        </li>
+        <li class="navLink">
+            <a href="" class="navLinkItem">
+                services
+            </a>
+        </li>
+        <li class="navLink">
+            <a href="" class="navLinkItem">
+                Blog
+            </a>
+        </li>
+    </ul>
+
+    <div class="nav3rdsect">
+        <a href="" class="">Sitemaps</a>
+        <a class="btn" href="{% url 'contact' %}">Contact us</a>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <ul class="mobileNav">
+        <li className="navLink">
+            <a>
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <span>About</span>
+            </a>
+        </li>
+        <li className="navLink">
+            <a>
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <span>Services</span>
+            </a>
+        </li>
+        <li className="navLink">
+            <a>
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <span>Blog</span>
+            </a>
+        </li>
+       
+    </ul>
+
+</nav>

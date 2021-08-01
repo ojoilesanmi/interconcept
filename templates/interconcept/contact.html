@@ -1,0 +1,41 @@
+{% extends 'base.html'%}
+{%block content%}
+{% load static %}
+
+<section class="contact" id="contact">
+    <div class="contact-heading">
+        <h3>Get-in-touch</h3>
+    </div>
+    <div class="container">
+
+            <div class=" row contact-grids">
+                <div class=" col-md-6 col-sm-12 contact-form">
+                    <form class="postForm" action="{% url 'contact' %}" method="POST">
+                        <input type="text" placeholder="Full Name" required=""/>
+                        <input type="text" placeholder="Email-Address" required=""/>
+                        <textarea placeholder="Drop a Message" required=""></textarea>
+                        <div class="submit1"><input type="submit" value="Send"></div>
+                    </form>
+                </div>
+                <div class=" col-md-6 col-sm-12 map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.119522852691!2d3.3762775147706474!3d6.506551295293468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c5f6e28522b%3A0x34bb7fdf47960f07!2s312%20Herbert%20Macaulay%20Way%2C%20Sabo%20yaba%20100001%2C%20Lagos!5e0!3m2!1sen!2sng!4v1627746690151!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class=" row address">
+                        <div class="col-6 address_1">
+                            <p>Office Address:</p>
+                            <h6>312, Herbert Macualay way, Sabo yaba, Lagos Nigeria</h6>
+                        </div>
+                        <div class=" col-6 address_1">
+                            <p>Office Number:</p>
+                            <h6> +2348033509494</h6>
+                        </div>
+                    </div>
+
+                </div>
+               
+            </div>
+
+        </div>
+    </div>
+    
+</section>
+{% endblock %}
