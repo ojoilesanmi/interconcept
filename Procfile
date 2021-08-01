@@ -1,0 +1,1 @@
+web: gunicorn interconcept.wsgi --log-file -
