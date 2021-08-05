@@ -688,19 +688,19 @@ body {
 }
 
 .loans > .service-image {
-  background-image: url("../images/loans.png");
+  background-image: url("../img/loans.png");
 }
 
 .real-estate > .service-image {
-  background-image: url("../images/real_estate.png");
+  background-image: url("../img/real_estate.png");
 }
 
 .savings > .service-image {
-  background-image: url("../images/target_saving.png");
+  background-image: url("../img/target_saving.png");
 }
 
 .investment > .service-image {
-  background-image: url("../images/investment.png");
+  background-image: url("../img/investment.png");
 }
 
 .section_head {
