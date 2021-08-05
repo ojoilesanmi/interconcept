@@ -768,7 +768,7 @@ body {
 
 .__testimonial .testimonials_box {
   height: auto;
-  background: url("../images/Vector.png") repeat no-repeat, #6832D4;
+  background: url("../img/Vector.png") repeat no-repeat, #6832D4;
   background-blend-mode: overlay;
   width: 100%;
 }
