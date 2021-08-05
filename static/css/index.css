@@ -816,7 +816,7 @@ body {
   .__testimonial .testimonials_box .testimonials .testimonial:nth-child(odd) {
     margin-right: 100px;
   }
-}
+}whitenoise.storage.MissingFileError: The file 'images/loans.png' could not be found with <whitenoise.storage.CompressedManifestStaticFilesStorage object at 0x7f8629752730>.
 
 .__testimonial .testimonials_box .testimonials .testimonial p {
   max-width: 350px;
