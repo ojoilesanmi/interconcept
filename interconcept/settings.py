@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['interconceptgroup.herokuapp.com']
+ALLOWED_HOSTS = ['interconceptgroup.herokuapp.com', 'localhost']
 
 
 # Application definition
