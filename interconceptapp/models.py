@@ -10,4 +10,14 @@ class Contact(models.Model):
     def __str__(self):
         return self.fullname
 
+class Management(models.Model):
+    name = models.CharField(max_length=255)
+    photo = models.ImageField(upload_to='photos/%Y/%m/%d')
+    title = models.TextField()
+    linkedn_link = models.URLField(max_length=250)
+
+    def __str__(self):
+        return self.name
+
+
 

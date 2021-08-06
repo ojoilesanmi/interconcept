@@ -114,6 +114,10 @@ class Pagination  {
     }
 )()
 
+setTimeout(function() {
+    $('#message').fadeOut('slow');
+}, 5000);
+
 // document.addEventListener('DOMContentLoaded',()=> {
 
 // })
