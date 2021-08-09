@@ -1,7 +1,7 @@
 {%load static%}
 <nav class="navbar">
     <div class="logo">
-        <div class="circle"></div>
+        <div href="{% url 'index' %}" class="circle"></div>
         <p>
             Interconcept<br /> Microfinance bank
         </p>
@@ -17,6 +17,11 @@
         <li class="navLink">
             <a href="" class="navLinkItem">
                 services
+            </a>
+        </li>
+        <li class="navLink">
+            <a href="{% url 'team' %}" class="navLinkItem">
+                team
             </a>
         </li>
         <li class="navLink">

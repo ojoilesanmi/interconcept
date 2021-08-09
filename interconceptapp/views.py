@@ -1,10 +1,20 @@
 from django.shortcuts import render, redirect
 from django.core.mail import BadHeaderError, send_mail
-from .models import Contact
+from .models import Contact, Management
 from django.contrib import messages
 
 def index(request):
     return render(request, 'interconcept/index.html')
+
+def team(request):
+    management = Management.objects.all()
+
+    context = {
+        'management':management
+    }
+
+
+    return render(request, 'interconcept/team.html', context)
 
 def contact(request):
     if request.method == "POST":
