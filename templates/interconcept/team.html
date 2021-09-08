@@ -22,133 +22,36 @@
     <div class="container">
 
         <div class="row">
-          {% if management %}
+          {% if management%}
             {% for managements in management%}
             <div class="col-6 col-md-3">
               <div class="content">
-                  <a href="#" target="_blank">
+                  <a href="{{managements.linkedn_link.url}}" target="_blank">
                     <div class="content-overlay"></div>
-                    <img class="content-image" src="{{ managements.photo.url}}">
+                    <img class="content-image" src="{{managements.photo.url}}">
                     <div class="content-details fadeIn-top">
                       <h4>{{managements.name}}</h4>
-                      <p>{{managements.title}}</p>
+                      <p>{{managements.tite}}</p>
+                      <i class="fa fa-linkedin" style="font-size: 16px; color: #fff; "></i>
                     </div>
                   </a>
               </div>
             </div>
-  
 
             {% endfor %}
 
+
           {% else %}
             <div class="col-md-12">
-              <p> Oops! No Management Staff Available for Display Yet.
-                We are Working on this.
+              <p> Oops. We are working on Populating This Page.
+                Check Back Shortly. Thanks!
               </p>
             </div>
 
           {% endif %}
-          
-          <!-- <div class="col-6 col-md-4">
-            <div class="content">
-                <a href="#" target="_blank">
-                  <div class="content-overlay"></div>
-                  <img class="content-image" src="images/pexels-george-milton-6953560.jpg">
-                  <div class="content-details fadeIn-top">
-                    <h4>Olakunle Tayo Abraham.</h4>
-                    <p>M.D Finance Management</p>
-                  </div>
-                </a>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4">
-            <div class="content">
-                <a href="#" target="_blank">
-                  <div class="content-overlay"></div>
-                  <img class="content-image" src="images/pexels-george-milton-6953560.jpg">
-                  <div class="content-details fadeIn-top">
-                    <h4>Olakunle Tayo Abraham.</h4>
-                    <p>M.D Finance Management</p>
-                  </div>
-                </a>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-1">
-            <div class="content">
-                <a href="#" target="_blank">
-                  <div class="content-overlay"></div>
-                  <img class="content-image" src="images/pexels-george-milton-6953560.jpg">
-                  <div class="content-details fadeIn-top">
-                    <h4>Olakunle Tayo Abraham.</h4>
-                    <p>M.D Finance Management</p>
-                  </div>
-                </a>
-            </div>
-          </div>
-          
         </div>
 
-      </div>
-    <div class="container">
-
-        <div class="row">
-          <div class="col-6 col-md-1">
-            <div class="content">
-                <a href="#" target="_blank">
-                  <div class="content-overlay"></div>
-                  <img class="content-image" src="images/pexels-george-milton-6953560.jpg">
-                  <div class="content-details fadeIn-top">
-                    <h4>Olakunle Tayo Abraham.</h4>
-                    <p>M.D Finance Management</p>
-                  </div>
-                </a>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4">
-            <div class="content">
-                <a href="#" target="_blank">
-                  <div class="content-overlay"></div>
-                  <img class="content-image" src="images/pexels-george-milton-6953560.jpg">
-                  <div class="content-details fadeIn-top">
-                    <h4>Olakunle Tayo Abraham.</h4>
-                    <p>M.D Finance Management</p>
-                  </div>
-                </a>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4">
-            <div class="content">
-                <a href="#" target="_blank">
-                  <div class="content-overlay"></div>
-                  <img class="content-image" src="images/pexels-george-milton-6953560.jpg">
-                  <div class="content-details fadeIn-top">
-                    <h4>Olakunle Tayo Abraham.</h4>
-                    <p>M.D Finance Management</p>
-                  </div>
-                </a>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-3">
-            <div class="content">
-                <a href="#" target="_blank">
-                  <div class="content-overlay"></div>
-                  <img class="content-image" src="images/pexels-george-milton-6953560.jpg">
-                  <div class="content-details fadeIn-top">
-                    <h4>Olakunle Tayo Abraham.</h4>
-                    <p>M.D Finance Management</p>
-                  </div>
-                </a>
-            </div> -->
-          </div>
-          
-        </div>
-
-      </div>
+    </div>
     {%endblock%}
     {%include 'partials/_navbar.html'%}
 

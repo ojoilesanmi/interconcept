@@ -8,12 +8,9 @@ def index(request):
 
 def team(request):
     management = Management.objects.all()
-
     context = {
         'management':management
     }
-
-
     return render(request, 'interconcept/team.html', context)
 
 def contact(request):
@@ -30,6 +27,12 @@ def contact(request):
         return redirect('contact')
     else:
         return render(request, 'interconcept/contact.html')
+
+def about(request):
+    return render(request, 'interconcept/about.html')
+
+def services(request):
+    return render(request, 'interconcept/services.html')
 
 
 
