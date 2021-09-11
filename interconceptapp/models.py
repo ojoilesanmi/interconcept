@@ -15,6 +15,7 @@ class Management(models.Model):
     photo = models.ImageField(upload_to='photos/%Y/%m/%d')
     title = models.TextField(blank=False)
     linkedn_link = models.URLField(max_length=250, default=True)
+    email = models.EmailField(null=False, blank=True)
 
     def __str__(self):
         return self.name

@@ -29,7 +29,11 @@ def contact(request):
         return render(request, 'interconcept/contact.html')
 
 def about(request):
-    return render(request, 'interconcept/about.html')
+    management = Management.objects.all()
+    context = {
+        'management':management
+    }
+    return render(request, 'interconcept/about.html', context)
 
 def services(request):
     return render(request, 'interconcept/services.html')
