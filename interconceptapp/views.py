@@ -38,6 +38,8 @@ def about(request):
 def services(request):
     return render(request, 'interconcept/services.html')
 
+def blog(request):
+    return render(request, 'interconcept/blog.html')
 
 
         

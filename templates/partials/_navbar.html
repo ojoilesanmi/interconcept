@@ -1,7 +1,7 @@
 {%load static%}
 <div class="position-relative header ">
   <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container py-2"> <a class="navbar-brand font-weight-bold " href="{% url 'index' %}">Interconcept </a>
+      <div class="container py-2"> <a class="navbar-brand font-weight-bold " href="{% url 'index' %}">Interconcepts </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -14,7 +14,7 @@
             <li class="nav-item"> 
               <a class="nav-link" href="{% url 'services'%}">Service</a> </li>
             <li class="nav-item"> 
-              <a class="nav-link" href="#">Blog</a> </li>
+              <a class="nav-link" href="{% url 'blog' %}">Blog</a> </li>
           </ul>
           <div class="ml-lg-5"><a class="btn btn-a" href="{% url 'contact' %}">Contact Us</a> </div>
         </div>
