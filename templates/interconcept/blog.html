@@ -1,17 +1,20 @@
 {% extends 'base.html'%}
-{% load static %}
+{%load static%}
 {%block content%}
-<body>
-    <div class="container mt-5 pt-5" id="medium">
-        <div class="jumbotron text-center">
-            <div id="logo"></div>
-            <h1 class="display-4 mb-3">Blog Posts</h1>
-            <a class="btn btn-outline-primary btn-lg" href="https://medium.com/@interconceptgroups" target="_blank" role="button">View all posts</a>
-        </div>
-        <div class="row" id="jsonContent">
-        </div>
+<section class="section blog" id="blog">
+    <div class="container">
+      <header class="section-heading">
+        <h2>
+          From The Blog
+        </h2>
+        <span>Awesome articles from the blog</span>
+      </header>
+      <div class="section-content" id="blogContent">
+        <div class="row" id="jsonContent"></div>
+      </div>
+      <div class="text-center">
+        <a class="btn btn-dark" href="//medium.jasonmdesign.com" id="loadBlogPosts">View All<span class="fa fa-angle-double-right"></span></a>
+      </div>
     </div>
-    <script src="{% static 'js/blog.js'%}"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-</body>
+  </section>
 {%endblock%}
