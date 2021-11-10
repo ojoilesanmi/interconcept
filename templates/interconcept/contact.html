@@ -37,23 +37,24 @@
                         <form class= "postForm" action="{% url 'contact' %}" method="POST">
                             {% csrf_token %}
                             <input style="color:black" type="text" placeholder="Full Name" id="fullname" name="fullname" required=""/>
-                            <input style="color:black" type="email" placeholder="Email-Address" id="email" name="email" required=""/>
+                            <input style="color:black" type="email" placeholder="Email Address" id="email" name="email" required=""/>
                             <textarea placeholder="Drop a Message" id="message" name="message" required=""></textarea>
                             <div class="submit1"><input type="submit" value="Send"></div>
                         </form>
                     </div>
                     <div class=" col-md-6 col-sm-12 map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.119522852691!2d3.3762775147706474!3d6.506551295293468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c5f6e28522b%3A0x34bb7fdf47960f07!2s312%20Herbert%20Macaulay%20Way%2C%20Sabo%20yaba%20100001%2C%20Lagos!5e0!3m2!1sen!2sng!4v1627746690151!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.119522852691!2d3.3762775147706474!3d6.506551295293468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c5f6e28522b%3A0x34bb7fdf47960f07!2s312%20Herbert%20Macaulay%20Way%2C%20Sabo%20yaba%20100001%2C%20Lagos!5e0!3m2!1sen!2sng!4v1627746690151!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                        <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Taiyeolu%20Towers,%202a%20Olaide%20Tomori%20Street,%20Off%20Simbiat%20Abiola%20Road,%20Ikeja,%20Lagos&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         <div class=" row address">
                             <div class="col-6 address_1">
                                 <p>Office Address:</p>
-                                <h6>312, Herbert Macualay way, Sabo yaba, Lagos Nigeria</h6>
+                                <br>
+                                <p><span>Lagos </span>Regional Office</p>
+                                <h6>Taiyeolu Towers, 2a Olaide Tomori Street, Off Simbiat Abiola Road, Ikeja, Lagos</h6>
                             </div>
                             <div class=" col-6 address_1">
                                 <p>Office Number:</p>
-                                <h6>+2348066701121</h6>
-                                <p>Fax Number:</p>
-                                <h6>+017890546</h6>
+                                <h6>+2348037790379</h6>
                             </div>
                         </div>
 
